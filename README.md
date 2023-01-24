@@ -79,8 +79,8 @@ end endmodule
 ## UP COUNTER
 ```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: B.Bejin
-RegisterNumber: 22001908
+Developed by: SACHIN.C
+RegisterNumber: 22001187
 module up_c(clock,reset,upcounter);
 input clock,reset;
 output reg[2:0] upcounter;
