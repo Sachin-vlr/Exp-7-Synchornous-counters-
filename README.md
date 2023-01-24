@@ -76,6 +76,31 @@ end endmodule
 ### TRUTH TABLE 
 ![TT](https://user-images.githubusercontent.com/113497666/214291474-00331103-825c-4996-b86f-ce321482f53b.png)
 
+## UP COUNTER
+```
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: B.Bejin
+RegisterNumber: 22001908
+module up_c(clock,reset,upcounter);
+input clock,reset;
+output reg[2:0] upcounter;
+always@(posedge clock or posedge reset)
+begin
+if(reset)
+upcounter=3'b 000;
+else
+upcounter=upcounter+1;
+end endmodule
+```
 
+### RTL LOGIC DOWN COUNTER
+![RTL](https://user-images.githubusercontent.com/113497666/214292504-ef487da4-ebd6-479e-af94-0b2b17d6d134.png)
+
+###TIMING DIGRAMS FOR COUNTER
+![TT](https://user-images.githubusercontent.com/113497666/214292592-70ceb1ea-d3ac-4c7c-911b-83135e2cc594.png)
+
+###TRUTH TABLE
+![tt2](https://user-images.githubusercontent.com/113497666/214292676-bebd9b73-ab4f-413d-8842-b6b3859c13e6.png)
 
 ### RESULTS 
+Hence the Four bit Up counter and Down counter is implemented successfully and its functionality is validated.
